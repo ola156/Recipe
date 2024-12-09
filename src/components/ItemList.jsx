@@ -9,7 +9,7 @@ const ItemList = ({ food, isLoading }) => {
         food.extendedIngredients.map((item) => (
           <div key={item.id}>
             <div className="flex p-3 m-8 shadow-lg rounded-md ">
-              <div className="w-[100px] h-[100px] rounded-sm">
+              <div className="max-w-[100px] h-[100px] rounded-sm">
                 <img
                   src={
                     "https://spoonacular.com/cdn/ingredients_100x100/" +

@@ -4,11 +4,11 @@ import ItemList from "./ItemList";
 const FoodDetail = ({ foodId }) => {
   const [food, setFood] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const URL = ` https://api.spoonacular.com/recipes/${foodId}/information`;
-  const Api_Key = "6065fbb3bbd4496daced0dc07893302e";
+  const URL1 = ` https://api.spoonacular.com/recipes/${foodId}/information`;
+  const Api_Keys = "6065fbb3bbd4496daced0dc07893302e";
   useEffect(() => {
     const getRecipe = async () => {
-      const res = await fetch(`${URL}?apiKey=${Api_Key}`);
+      const res = await fetch(`${URL1}?apiKey=${Api_Keys}`);
       const data = await res.json();
       setFood(data);
       console.log(data);
